@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeaea"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/end_call"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="42dp"
+        android:background="#ADADAD" />
+
+    <Button
+        android:id="@+id/end_call"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:background="#9D9D9D"
+        android:text="@string/end_call_string"
+        android:width="100dp" />
+
+    <ImageView
+        android:id="@+id/call_lang_icon"
+        android:layout_width="70dp"
+        android:layout_height="49dp"
+        android:layout_above="@+id/showTime"
+        android:layout_toRightOf="@+id/showTime"
+        android:src="@drawable/jp" />
+
+    <Button
+        android:id="@+id/next_call_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/call_lang_icon"
+        android:layout_alignTop="@+id/speaker_btn"
+        android:text="下一通" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="70dp"
+        android:layout_height="49dp"
+        android:layout_alignLeft="@+id/end_call"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="59dp"
+        android:maxHeight="49dp"
+        android:maxWidth="70dp"
+        android:src="@drawable/taiwan" />
+
+    <TextView
+        android:id="@+id/showTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="44dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="00:00"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ToggleButton
+        android:id="@+id/speaker_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view1"
+        android:layout_marginBottom="41dp"
+        android:layout_toLeftOf="@+id/showTime"
+        android:text="ToggleButton"
+        android:textOff="開啟擴音"
+        android:textOn="關閉擴音" />
+
+</RelativeLayout>

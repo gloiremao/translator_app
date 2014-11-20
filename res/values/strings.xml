@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">雲端翻譯服務</string>
+    <string name="title_activity_lang">LangActivity</string>
+    <string name="title_activity_call">CallActivity</string>
+    <string name="end_call_string">結束通話</string>
+
+</resources>
